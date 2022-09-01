@@ -2,6 +2,7 @@ const PRIMARY = '#2e4057';
 const SECONDARY = '#767676';
 const WHITE = '#fff';
 const WHITE_GREY = '#F2F2F2';
+const GREY = '#848884';
 const BLACK = '#000';
 const BLUE = '#0077FF';
 const ORANGE = '#ffbf00';
@@ -38,4 +39,5 @@ export default {
   WARNING,
   ALERT,
   INFO,
+  GREY,
 };
