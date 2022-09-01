@@ -1,6 +1,7 @@
 import React from 'react';
 import {FlatList, ImageBackground, StyleSheet, View} from 'react-native';
 import {Colors, Rounded, Spacing} from '../../styles';
+import {Button} from '../button';
 import {SectionHeader} from '../section-header';
 
 interface IPerson {
@@ -28,11 +29,13 @@ export const PeopleSection = (props: IPeople) => {
         renderItem={({item}) => {
           return (
             <>
-              <ImageBackground
-                source={{uri: item.image}}
-                style={styles.imageBackground}>
-                <View style={styles.opacity} />
-              </ImageBackground>
+              <Button>
+                <ImageBackground
+                  source={{uri: item.image}}
+                  style={styles.imageBackground}>
+                  <View style={styles.opacity} />
+                </ImageBackground>
+              </Button>
             </>
           );
         }}
