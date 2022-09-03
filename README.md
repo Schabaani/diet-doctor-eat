@@ -15,7 +15,7 @@ First clone the project. Then navigate to the source code, then open a terminal 
 For e2e tests, I use `Detox`. E2E tests are inside `e2e/home.e2e.js` folder. For installation guide please check their [website](https://github.com/wix/Detox). After installing it on your machine, open a terminal, navigate to the root of the project:
 
 1. `yarn detox:ios:build`
-2. `yarn detxo:ios:test`
+2. `yarn detox:ios:test`
 
 # Structure
 
