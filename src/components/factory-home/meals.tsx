@@ -2,6 +2,7 @@ import React from 'react';
 import {FlatList, Text, Image, StyleSheet, View, Platform} from 'react-native';
 import {Rounded, Spacing} from '../../styles';
 import {Button} from '../button';
+import {Shadow} from '../shadow';
 import {SectionHeader} from '../section-header';
 
 interface IMeal {
@@ -28,9 +29,9 @@ export const MealSection = (props: IMeals) => {
         renderItem={({item}) => {
           return (
             <Button style={styles.cardContainer}>
-              <View style={styles.shadow}>
+              <Shadow>
                 <Image source={{uri: item.image}} style={styles.image} />
-              </View>
+              </Shadow>
               <Text numberOfLines={2}>{item.title}</Text>
             </Button>
           );
@@ -50,18 +51,5 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     marginBottom: Spacing.x1,
-  },
-  shadow: {
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: {width: 0, height: 1.5},
-        shadowOpacity: 0.2,
-        shadowRadius: 2,
-      },
-      android: {
-        elevation: 5,
-      },
-    }),
   },
 });
