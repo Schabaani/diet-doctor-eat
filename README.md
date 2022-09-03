@@ -49,7 +49,7 @@ the navigation structures..
 
 ### `scenes`
 
-Each scene has a folder. Inside each folder always there to files: `index.tsx` and `styles.ts`.
+Each scene has a folder. Inside each folder always there are two files: `index.tsx` and `styles.ts`.
 
 ### `styles`
 
