@@ -1,4 +1,5 @@
 import {getToday, greeting} from '../src/utils/date';
+import Home from './pageObjects/home';
 
 describe('Home', () => {
   beforeAll(async () => {
@@ -11,7 +12,7 @@ describe('Home', () => {
 
   it('today is', async () => {
     const today = getToday();
-    await expect(element(by.label('Today is'))).toHaveText(today);
+    await expect(Home.today).toHaveText(today);
   });
 
   it('greeting', async () => {
